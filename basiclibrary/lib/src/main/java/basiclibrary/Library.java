@@ -13,40 +13,43 @@ import com.example.lab3.TallyingElection;
 public class Library {
     public static void main(String[] args) {
 
-//        System.out.println("Roll Method n=4 =>");
-//        System.out.println(Arrays.toString(roll(4)));
-//
-//        System.out.println("containsDuplicates Method arr={1, 5, 7, 7, 6} =>");
-//        System.out.println(containsDuplicates(new int[]{1, 5, 7, 7, 6}));
-//        System.out.println("containsDuplicates Method arr={1, 5, 7, 6} =>");
-//        System.out.println(containsDuplicates(new int[]{1, 5, 7, 6}));
-//
-//        System.out.println("Calculating_Averages Method arr={1, 5, 7, 7, 6} =>");
-//        System.out.println(Calculating_Averages(new double[]{1, 5, 7, 7, 6}));
-//
-//        System.out.println("lowest_Average Method arr={\n" +
-//                "                {66, 64, 58, 65, 71, 57, 60},\n" +
-//                "                {57, 65, 65, 70, 72, 65, 51},\n" +
-//                "                {55, 54, 60, 53, 59, 57, 61},\n" +
-//                "                {65, 56, 55, 52, 55, 62, 57}\n" +
-//                "        } =>");
-//        int[][] weeklyMonthTemperatures = {
-//                {66, 64, 58, 65, 71, 57, 60},
-//                {57, 65, 65, 70, 72, 65, 51},
-//                {55, 54, 60, 53, 59, 57, 61},
-//                {65, 56, 55, 52, 55, 62, 57}
-//        };
-//        System.out.println(Arrays.toString(lowest_Average(weeklyMonthTemperatures)));
+        System.out.println("////////////////////////////////// Lab2 ///////////////////////////////////");
 
-        ////////////////////////////////// Lab3 ///////////////////////////////////
+        System.out.println("Roll Method n=4 =>");
+        System.out.println(Arrays.toString(roll(4)));
+
+        System.out.println("containsDuplicates Method arr={1, 5, 7, 7, 6} =>");
+        System.out.println(containsDuplicates(new int[]{1, 5, 7, 7, 6}));
+        System.out.println("containsDuplicates Method arr={1, 5, 7, 6} =>");
+        System.out.println(containsDuplicates(new int[]{1, 5, 7, 6}));
+
+        System.out.println("Calculating_Averages Method arr={1, 5, 7, 7, 6} =>");
+        System.out.println(Calculating_Averages(new double[]{1, 5, 7, 7, 6}));
+
+        System.out.println("lowest_Average Method arr={\n" +
+                "                {66, 64, 58, 65, 71, 57, 60},\n" +
+                "                {57, 65, 65, 70, 72, 65, 51},\n" +
+                "                {55, 54, 60, 53, 59, 57, 61},\n" +
+                "                {65, 56, 55, 52, 55, 62, 57}\n" +
+                "        } =>");
         int[][] weeklyMonthTemperatures = {
                 {66, 64, 58, 65, 71, 57, 60},
                 {57, 65, 65, 70, 72, 65, 51},
                 {55, 54, 60, 53, 59, 57, 61},
                 {65, 56, 55, 52, 55, 62, 57}
         };
+        System.out.println(Arrays.toString(lowest_Average(weeklyMonthTemperatures)));
+
+        ////////////////////////////////// Lab3 ///////////////////////////////////
+        System.out.println("////////////////////////////////// Lab3 ///////////////////////////////////");
+        int[][] weeklyMonthTemperatures1 = {
+                {66, 64, 58, 65, 71, 57, 60},
+                {57, 65, 65, 70, 72, 65, 51},
+                {55, 54, 60, 53, 59, 57, 61},
+                {65, 56, 55, 52, 55, 62, 57}
+        };
         AnalyzingWeatherData  analyzingWeatherData = new AnalyzingWeatherData();
-        String WetherNotSeen = analyzingWeatherData.WeatherData(weeklyMonthTemperatures);
+        String WetherNotSeen = analyzingWeatherData.WeatherData(weeklyMonthTemperatures1);
         //System.out.println(">>>>>>>>>>"+WetherNotSeen);
         String[] eachWether = WetherNotSeen.split(" ");
         for (String weather:
