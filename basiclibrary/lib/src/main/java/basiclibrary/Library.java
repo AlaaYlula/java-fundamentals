@@ -3,35 +3,72 @@
  */
 package basiclibrary;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+
+import com.example.lab3.AnalyzingWeatherData;
+import com.example.lab3.TallyingElection;
 
 public class Library {
     public static void main(String[] args) {
 
-        System.out.println("Roll Method n=4 =>");
-        System.out.println(Arrays.toString(roll(4)));
+//        System.out.println("Roll Method n=4 =>");
+//        System.out.println(Arrays.toString(roll(4)));
+//
+//        System.out.println("containsDuplicates Method arr={1, 5, 7, 7, 6} =>");
+//        System.out.println(containsDuplicates(new int[]{1, 5, 7, 7, 6}));
+//        System.out.println("containsDuplicates Method arr={1, 5, 7, 6} =>");
+//        System.out.println(containsDuplicates(new int[]{1, 5, 7, 6}));
+//
+//        System.out.println("Calculating_Averages Method arr={1, 5, 7, 7, 6} =>");
+//        System.out.println(Calculating_Averages(new double[]{1, 5, 7, 7, 6}));
+//
+//        System.out.println("lowest_Average Method arr={\n" +
+//                "                {66, 64, 58, 65, 71, 57, 60},\n" +
+//                "                {57, 65, 65, 70, 72, 65, 51},\n" +
+//                "                {55, 54, 60, 53, 59, 57, 61},\n" +
+//                "                {65, 56, 55, 52, 55, 62, 57}\n" +
+//                "        } =>");
+//        int[][] weeklyMonthTemperatures = {
+//                {66, 64, 58, 65, 71, 57, 60},
+//                {57, 65, 65, 70, 72, 65, 51},
+//                {55, 54, 60, 53, 59, 57, 61},
+//                {65, 56, 55, 52, 55, 62, 57}
+//        };
+//        System.out.println(Arrays.toString(lowest_Average(weeklyMonthTemperatures)));
 
-        System.out.println("containsDuplicates Method arr={1, 5, 7, 7, 6} =>");
-        System.out.println(containsDuplicates(new int[]{1, 5, 7, 7, 6}));
-        System.out.println("containsDuplicates Method arr={1, 5, 7, 6} =>");
-        System.out.println(containsDuplicates(new int[]{1, 5, 7, 6}));
-
-        System.out.println("Calculating_Averages Method arr={1, 5, 7, 7, 6} =>");
-        System.out.println(Calculating_Averages(new double[]{1, 5, 7, 7, 6}));
-
-        System.out.println("lowest_Average Method arr={\n" +
-                "                {66, 64, 58, 65, 71, 57, 60},\n" +
-                "                {57, 65, 65, 70, 72, 65, 51},\n" +
-                "                {55, 54, 60, 53, 59, 57, 61},\n" +
-                "                {65, 56, 55, 52, 55, 62, 57}\n" +
-                "        } =>");
+        ////////////////////////////////// Lab3 ///////////////////////////////////
         int[][] weeklyMonthTemperatures = {
                 {66, 64, 58, 65, 71, 57, 60},
                 {57, 65, 65, 70, 72, 65, 51},
                 {55, 54, 60, 53, 59, 57, 61},
                 {65, 56, 55, 52, 55, 62, 57}
         };
-        System.out.println(Arrays.toString(lowest_Average(weeklyMonthTemperatures)));
+        AnalyzingWeatherData  analyzingWeatherData = new AnalyzingWeatherData();
+        String WetherNotSeen = analyzingWeatherData.WeatherData(weeklyMonthTemperatures);
+        //System.out.println(">>>>>>>>>>"+WetherNotSeen);
+        String[] eachWether = WetherNotSeen.split(" ");
+        for (String weather:
+             eachWether) {
+            System.out.println("Never saw temperature: "+ weather);
+        }
+
+        List<String> votes = new ArrayList<>();
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Shrub");
+        votes.add("Hedge");
+        votes.add("Shrub");
+        votes.add("Bush");
+        votes.add("Hedge");
+        votes.add("Bush");
+
+        TallyingElection tallyingElection = new TallyingElection();
+        String winner = tallyingElection.tally(votes);
+        System.out.println(winner + " received the most votes!");
+
     }
     public boolean someLibraryMethod() {
         return true;
@@ -90,4 +127,7 @@ public class Library {
         }
 
         return arr[lowestIdx];
-    }}
+    }
+
+
+}

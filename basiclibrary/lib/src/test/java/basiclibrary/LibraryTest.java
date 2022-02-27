@@ -6,6 +6,7 @@ package basiclibrary;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import com.example.lab3.*;
 class LibraryTest {
     @Test void someLibraryMethodReturnsTrue() {
         Library classUnderTest = new Library();
@@ -70,4 +71,6 @@ class LibraryTest {
         });
         assertArrayEquals(new int[]{65, 56, 55, 52, 55, 62, 57},testResult2);
     }
+
+
 }
