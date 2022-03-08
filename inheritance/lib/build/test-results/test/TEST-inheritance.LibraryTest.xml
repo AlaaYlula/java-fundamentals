@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="inheritance.LibraryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-06T10:46:10" hostname="ALAA-ALWAZANI" time="0.023">
+<testsuite name="inheritance.LibraryTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2022-03-08T11:11:55" hostname="Alaa-Alwazani" time="0.344">
   <properties/>
-  <testcase name="TestAddRevToResSameAuther()" classname="inheritance.LibraryTest" time="0.023"/>
+  <testcase name="TestAddRevToResSameAuther()" classname="inheritance.LibraryTest" time="0.24"/>
+  <testcase name="someLibraryMethodReturnsTrue()" classname="inheritance.LibraryTest" time="0.046"/>
+  <testcase name="TestTheaterCons()" classname="inheritance.LibraryTest" time="0.032"/>
+  <testcase name="TestTheaterRemoveMovie()" classname="inheritance.LibraryTest" time="0.002"/>
+  <testcase name="TestRevCon()" classname="inheritance.LibraryTest" time="0.001"/>
+  <testcase name="TesttoStringRes()" classname="inheritance.LibraryTest" time="0.001"/>
+  <testcase name="TesttoStringRev()" classname="inheritance.LibraryTest" time="0.004"/>
+  <testcase name="TestShopCons()" classname="inheritance.LibraryTest" time="0.003"/>
+  <testcase name="TestRestCons()" classname="inheritance.LibraryTest" time="0.001"/>
+  <testcase name="TestTheaterReview()" classname="inheritance.LibraryTest" time="0.003"/>
+  <testcase name="TestAddRevToRes()" classname="inheritance.LibraryTest" time="0.001"/>
+  <testcase name="TestShopReview()" classname="inheritance.LibraryTest" time="0.001"/>
+  <testcase name="TestRevConStar()" classname="inheritance.LibraryTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

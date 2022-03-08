@@ -4,6 +4,10 @@
 package inheritance;
 
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
@@ -20,11 +24,11 @@ class LibraryTest {
 //Write a test to create an instance of Restaurant and ensure that its toString is working properly.
     @Test void TesttoStringRes(){
         Resturant resturant = new Resturant("Mac",50);
-        assertEquals("Resturant{name='Mac', stars=0, price=50, ListReview=[]}",resturant.toString());
+        assertEquals("Resturant{name='Mac', stars=0.0, ListReview=[]}",resturant.toString());
     }
 //Test that your Review constructor is working reasonably.
     @Test void TestRevCon(){
-        Review review = new Review("Nice Place","Alaa",5);
+        Review review = new Review("Alaa","Nice Place",5);
         assertEquals("Nice Place",review.getBody());
         assertEquals("Alaa",review.getAuthor());
         assertEquals(5,review.getStars());
@@ -33,35 +37,81 @@ class LibraryTest {
     // Read https://stackoverflow.com/questions/156503/how-do-you-assert-that-a-certain-exception-is-thrown-in-junit-4-tests
     @Test  public void TestRevConStar(){
         try {
-            Review review = new Review("Nice Place","Alaa",6);
+            Review review = new Review("Alaa","Nice Place",6);
             fail( "My method didn't throw when I expected it to" );
         } catch (IllegalArgumentException expectedException) {
         }
     }
 // Write a test to create an instance of Review and ensure that its toString is working properly.
     @Test void TesttoStringRev(){
-        Review review = new Review("Nice Place","Alaa",5);
-        assertEquals("Review{body='Nice Place', author='Alaa', stars=5}",review.toString());
+        Review review = new Review("Alaa","Nice Place",5);
+        assertEquals("Review{ author='Alaa', body='Nice Place', stars=5.0}",review.toString());
     }
 //Add tests to ensure that when you call addReview, the association is created between the Restaurant and the Review.
     @Test void TestAddRevToRes(){
         Resturant resturant = new Resturant("Mac",50);
-        Review review = new Review("Nice Place","Alaa",5);
+        Review review = new Review("Alaa","Nice Place",5);
         resturant.addReview(review);
-        assertEquals("Resturant{name='Mac', stars=5, price=50, ListReview=[Review{body='Nice Place', author='Alaa', stars=5}]}",resturant.toString());
+        assertEquals("Resturant{name='Mac', stars=5.0, ListReview=[Review{ author='Alaa', body='Nice Place', stars=5.0}]}",resturant.toString());
     }
 /*add tests. (In particular, ensure that if you’re trying to call addReview when the restaurant and the review are already
  associated, the star rating of the restaurant does not update.)
  */
     @Test void TestAddRevToResSameAuther(){
         Resturant resturant = new Resturant("Mac",50);
-        Review review = new Review("Nice Place","Alaa",5);
+        Review review = new Review("Alaa","Nice Place",5);
         resturant.addReview(review);
-        Review review2 = new Review("Nice Place","Alaa",3);
+        Review review2= new Review("Alaa","Nice Place",2);
         resturant.addReview(review2);
 
-        assertEquals("Resturant{name='Mac', stars=5, price=50, ListReview=[Review{body='Nice Place', author='Alaa', stars=5}, Review{body='Nice Place', author='Alaa', stars=3}]}",resturant.toString());
+        assertEquals("Resturant{name='Mac', stars=5.0, ListReview=[Review{ author='Alaa', body='Nice Place', stars=5.0}, Review{ author='Alaa', body='Nice Place', stars=2.0}]}",resturant.toString());
     }
+/////////////////////////////////////////// Lab07 /////////////////////////////////////////////////
+//Test that your Shop constructor is behaving reasonably.
+    @Test void TestShopCons(){
+        Shop shop = new Shop("name","Shop",50);
+        assertEquals(50,shop.getPrice());
+        assertEquals("name",shop.getName());
+        assertEquals("Shop",shop.getDescription());
+        assertEquals(shop.toString(),"Shop{name='name', description='Shop', stars=0.0, ListOFReview=[]}");
+    }
+    // review shops
+    @Test void TestShopReview(){
+        Shop shop = new Shop("name","Shop",50);
+        Review review = new Review("Alaa","Nice Shop",4);
+        shop.addReview(review);
+        assertEquals(shop.toString(),"Shop{name='name', description='Shop', stars=4.0, ListOFReview=[Review{ author='Alaa', body='Nice Shop', stars=4.0}]}");
+    }
+    // Test the Theater constructor and add movies.
+    @Test void TestTheaterCons(){
+        List<String> movies = new ArrayList<>();
+        movies.add("Mov1");
+        Theater theater = new Theater("theater1",movies);
+        theater.addMovie("Mov2");
+        assertEquals(theater.toString(),"Theater{name='theater1', stars=0.0, AllMovies=[Mov1, Mov2], ListOFReview=[]}");
+    }
+    // Test the Theater constructor and remove movies.
+    @Test void TestTheaterRemoveMovie(){
+        List<String> movies = new ArrayList<>();
+        movies.add("Mov1");
+        Theater theater = new Theater("theater1",movies);
+        theater.addMovie("Mov2");
+        theater.RemoveMovie("Mov1");
+        assertEquals(theater.toString(),"Theater{name='theater1', stars=0.0, AllMovies=[Mov2], ListOFReview=[]}");
+    }
+    // Ensure that your Theater is just as reviewable as your Restaurant and your Shop.
+    @Test void TestTheaterReview(){
+        List<String> movies = new ArrayList<>();
+        movies.add("Mov1");
+        Theater theater = new Theater("theater1",movies);
+        theater.addMovie("Mov2");
+        Review review = new Review("Alaa","Nice Theater",4);
+        theater.addReview(review);
+        Review review2 = new Review("Alaa","Nice Theater",2);// Add the Review But not update the stars
+        theater.addReview(review2);
+        Review review3 = new Review("Baraa","Nice Movie",5,"Mov2");
+        theater.addReview(review3);
 
-
+        assertEquals(theater.toString(),"Theater{name='theater1', stars=4.5, AllMovies=[Mov1, Mov2], ListOFReview=[Review{ author='Alaa', body='Nice Theater', stars=4.0}, Review{ author='Alaa', body='Nice Theater', stars=2.0}, Review{Movie Name='Mov2', author='Baraa', body='Nice Movie', stars=5.0}]}");
+    }
 }
