@@ -3,31 +3,83 @@
  */
 package inheritance;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Library {
     public boolean someLibraryMethod() {
         return true;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {;
+        System.out.println(">>>>>>>>>>>>>>>>> Resturant Main <<<<<<<<<<<<<<<<");
 
-        Resturant resturant1 = new Resturant("Mac",50);
-        System.out.println(resturant1.toString());
-        Review rev1 = new Review("Nice place","Alaa",5);
+         ResturantMain();
+        System.out.println(">>>>>>>>>>>>>>>>> Shop Main <<<<<<<<<<<<<<<<");
+        ShopMain();
+        System.out.println(">>>>>>>>>>>>>>>>> Theater Main <<<<<<<<<<<<<<<<");
+
+        TheaterMain();
+
+    }
+    public static void TheaterMain(){
+        List<String> movies = new ArrayList<>();
+        movies.add("Mov1");
+        Theater theater = new Theater("theater1",movies);
+        System.out.println("The theater "+theater.toString());
+
+        Theater Castingtheater = (Theater) theater;
+        Castingtheater.addMovie("Mov2");
+        Castingtheater.addMovie("Mov3");
+        System.out.println("The theater after added the movies=> "+theater.toString());
+
+        Castingtheater.RemoveMovie("Mov1");
+
+        Review review = new Review("Alaa","Nice Movie" , 5);
+        theater.addReview(review);
+        System.out.println("The theater after remove Mov1 and add Review=> "+theater.toString());
+
+        Review review2 = new Review("Alaa","Nice Movie" , 2,"Mov3");// No update the stars "Same Author"
+        theater.addReview(review2);
+        System.out.println("The theater after added review with same Author=> "+theater.toString());
+
+        Review review3 = new Review("Baraa","Nice Movie" , 2);// Update the Stars
+        theater.addReview(review3);
+        System.out.println("The theater added a new review=> "+theater.toString());
+
+
+
+//        Review review = new Review("Alaa" , "Nice" ,2, "Mov"); // No Movie called Mov
+//        theater.addReview(review);
+//        Review review2 = new Review("Alaa" , "action Movie2" , 2,"Mov2");
+//        theater.addReview(review2);
+//        Review review3 = new Review("Baraa" , "Nice Movie3" , 2,"Mov3");
+//        theater.addReview(review3);
+//        System.out.println(theater.toString());
+//
+//        Review review4 = new Review("Baraa" , "Nice2 Movie3" , 5,"Mov3");// Same Author Review in same Movie  so add the review but not update the stars
+//        theater.addReview(review4);
+//        System.out.println(theater.toString());
+
+    }
+    public static void ShopMain(){
+        Facility shop = new Shop("shop1","this is Shop",50);
+        Review review = new Review("Alaa","Nice Shop",4);
+        shop.addReview(review);
+        Review review2 = new Review("Yousef","Bad Shop",2);
+        shop.addReview(review2);
+        System.out.println("The Shop after added two reviews=> "+shop.toString());
+    }
+    public static void ResturantMain(){
+        Facility resturant1 = new Resturant("Mac",50);
+        Review rev1 = new Review("Alaa","Nice place",3);
         resturant1.addReview(rev1);
-        Review rev2 = new Review("Clean place","Yousef",4);
+        Review rev2 = new Review("Yousef","Clean place",4);
         resturant1.addReview(rev2);
-        Review rev3= new Review("Nice place","Alaa",3); // Same Author
+        Review rev3 = new Review("Alaa","Nice place",5); // Same Author so add the review but not update the stars
         resturant1.addReview(rev3);
-//        Review rev3 = new Review("Nice place","Alaa",6);
-//        resturant1.addReview(rev3);
-        System.out.println(resturant1.toString());
 
-
-        Resturant resturant2 = new Resturant("Res2",100);
-        Review rev1_2 = new Review("clean","Baraa",4);
-        resturant2.addReview(rev1_2);
-        System.out.println(resturant2.toString());
-
+        System.out.println("The Resturant after added three reviews last one is from same author=> "+resturant1.toString());
 
     }
 }

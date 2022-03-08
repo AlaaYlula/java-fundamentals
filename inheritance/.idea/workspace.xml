@@ -5,16 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e233e7f-fa22-4427-8ac9-ddceb1098484" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linter/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linter/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linter/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linter/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linter/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linter/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linter/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linter/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/inheritance/Museums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/inheritance/ReviewInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/inheritance/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/inheritance/Theater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/inheritance.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/lib/inheritance.lib.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/lib/inheritance.lib.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/lib/inheritance.lib.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/bin/main/inheritance/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/bin/main/inheritance/Library.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/bin/main/inheritance/Resturant.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/bin/main/inheritance/Resturant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/bin/main/inheritance/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/bin/main/inheritance/Review.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/bin/test/inheritance/LibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/bin/test/inheritance/LibraryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/classes/java/main/inheritance/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/classes/java/main/inheritance/Library.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/classes/java/main/inheritance/Resturant.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/classes/java/main/inheritance/Resturant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/classes/java/main/inheritance/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/classes/java/main/inheritance/Review.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/classes/java/test/inheritance/LibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/classes/java/test/inheritance/LibraryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/reports/tests/test/classes/inheritance.LibraryTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/reports/tests/test/classes/inheritance.LibraryTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/reports/tests/test/packages/inheritance.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/reports/tests/test/packages/inheritance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/test-results/test/TEST-inheritance.LibraryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/test-results/test/TEST-inheritance.LibraryTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/inheritance/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/inheritance/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/inheritance/Resturant.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/inheritance/Resturant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/inheritance/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/inheritance/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/inheritance/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/inheritance/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,21 +55,54 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="inheritance" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/inheritance/ReviewInterface.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/inheritance/Library.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/inheritance/Theater.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/inheritance/Shop.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/inheritance/Review.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/inheritance/Resturant.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/inheritance/Facility.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/test/java/inheritance/LibraryTest.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="25w0OFIofbR0ffkajW1BioSWYMt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,7 +110,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Demo_Work/amman-401d6-java/curriculum/class-06/demo/class-6" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -67,7 +129,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest.TestAddRevToRes" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -80,7 +142,7 @@
           <list>
             <option value=":lib:test" />
             <option value="--tests" />
-            <option value="&quot;inheritance.LibraryTest.TestAddRevToRes&quot;" />
+            <option value="&quot;inheritance.LibraryTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -90,7 +152,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LibraryTest.TestAddRevToResSameAuther" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest.TestTheaterCons" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -103,7 +165,7 @@
           <list>
             <option value=":lib:test" />
             <option value="--tests" />
-            <option value="&quot;inheritance.LibraryTest.TestAddRevToResSameAuther&quot;" />
+            <option value="&quot;inheritance.LibraryTest.TestTheaterCons&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -113,7 +175,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LibraryTest.TestRevConStar" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest.TestTheaterRemoveMovie" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -126,7 +188,7 @@
           <list>
             <option value=":lib:test" />
             <option value="--tests" />
-            <option value="&quot;inheritance.LibraryTest.TestRevConStar&quot;" />
+            <option value="&quot;inheritance.LibraryTest.TestTheaterRemoveMovie&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -136,7 +198,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LibraryTest.TesttoStringRev" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest.TestTheaterReview" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -149,7 +211,7 @@
           <list>
             <option value=":lib:test" />
             <option value="--tests" />
-            <option value="&quot;inheritance.LibraryTest.TesttoStringRev&quot;" />
+            <option value="&quot;inheritance.LibraryTest.TestTheaterReview&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -161,11 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LibraryTest.TestAddRevToResSameAuther" />
-        <item itemvalue="Gradle.LibraryTest.TestAddRevToRes" />
+        <item itemvalue="Gradle.LibraryTest.TestTheaterReview" />
+        <item itemvalue="Gradle.LibraryTest" />
         <item itemvalue="Application.Library" />
-        <item itemvalue="Gradle.LibraryTest.TesttoStringRev" />
-        <item itemvalue="Gradle.LibraryTest.TestRevConStar" />
+        <item itemvalue="Gradle.LibraryTest.TestTheaterRemoveMovie" />
+        <item itemvalue="Gradle.LibraryTest.TestTheaterCons" />
       </list>
     </recent_temporary>
   </component>
